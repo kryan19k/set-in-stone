@@ -24,7 +24,7 @@ const expertiseAreas = [
 
 export function ExpertiseSection() {
   return (
-    <section className="py-24 px-4 relative">
+    <section className="py-24 px-4 relative bg-green-500/10 dark:bg-green-900/20 border-t-4 border-green-400">
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <motion.div
@@ -34,9 +34,9 @@ export function ExpertiseSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-slate-100">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white">
             Why choose strategic advisory over{" "}
-            <span className="text-cyan-600 dark:text-cyan-400">going it alone?</span>
+            <span className="text-cyan-500 dark:text-cyan-400">going it alone?</span>
           </h2>
         </motion.div>
 
@@ -54,33 +54,33 @@ export function ExpertiseSection() {
                 whileHover={{ y: -8 }}
                 className="group"
               >
-                <Card className="p-8 h-full relative overflow-hidden backdrop-blur-sm bg-white/50 dark:bg-slate-800/50 border-gray-200 dark:border-slate-700/50 hover:border-cyan-400/50 transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-cyan-500/10 dark:hover:shadow-cyan-400/10">
+                <Card className="p-8 h-full relative overflow-hidden backdrop-blur-sm bg-white/90 dark:bg-gray-800/90 border-2 border-green-400/60 hover:border-green-400 transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-green-500/30 dark:hover:shadow-green-400/30">
                   {/* Background blur effect */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/5 via-transparent to-green-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-400/15 via-transparent to-green-500/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   {/* Icon with glow effect */}
                   <div className="relative mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 dark:from-cyan-400 dark:to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-cyan-500/25 dark:group-hover:shadow-cyan-400/25 transition-all duration-300 group-hover:scale-110">
                       <IconComponent className="w-8 h-8 text-white dark:text-slate-900" />
                     </div>
-                    {/* Green accent glow effect */}
-                    <div className="absolute inset-0 w-16 h-16 bg-green-400/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    {/* Cyan accent glow effect */}
+                    <div className="absolute inset-0 w-16 h-16 bg-cyan-400/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4 relative">
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 relative">
                     {area.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed relative">
+                  <p className="text-slate-600 dark:text-slate-200 leading-relaxed relative">
                     {area.description}
                   </p>
 
-                  {/* Floating particles effect - green accents */}
-                  <div className="absolute top-4 right-4 w-2 h-2 bg-green-400/30 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:animate-pulse" />
-                  <div className="absolute bottom-8 left-8 w-1 h-1 bg-green-300/40 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200" />
-                  <div className="absolute top-1/2 right-8 w-1.5 h-1.5 bg-green-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-600 delay-100" />
+                  {/* Floating particles effect - cyan accents */}
+                  <div className="absolute top-4 right-4 w-2 h-2 bg-cyan-400/50 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:animate-pulse" />
+                  <div className="absolute bottom-8 left-8 w-1 h-1 bg-cyan-300/60 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200" />
+                  <div className="absolute top-1/2 right-8 w-1.5 h-1.5 bg-cyan-500/40 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-600 delay-100" />
                 </Card>
               </motion.div>
             )

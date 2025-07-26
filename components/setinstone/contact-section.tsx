@@ -19,7 +19,7 @@ export function ContactSection() {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight text-slate-900 dark:text-slate-100">
             Ready to explore what's{" "}
-            <span className="text-cyan-600 dark:text-cyan-400">possible?</span>
+            <span className="text-green-600 dark:text-green-400">possible?</span>
           </h2>
           <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed mb-8">
             If you're feeling stuck, scattered, or overloaded, you don't need to 

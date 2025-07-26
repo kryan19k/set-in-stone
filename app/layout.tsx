@@ -18,6 +18,12 @@ const fontCursive = Dancing_Script({
   variable: "--font-cursive",
 })
 
+const fontAmsterdam = localFont({
+  src: "../fonts/Amsterdam.ttf",
+  variable: "--font-amsterdam",
+  display: "swap",
+})
+
 const defaultUrl = process.env.VERCEL_URL
   ? `https://www.nextjs.design`
   : "http://localhost:3000"
@@ -47,7 +53,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${fontSans.variable} ${fontCursive.variable} font-sans`}>
+    <html lang="en" className={`${fontSans.variable} ${fontCursive.variable} ${fontAmsterdam.variable} font-sans`}>
       <body>
         <ThemeProvider
           attribute="class"
@@ -56,7 +62,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           disableTransitionOnChange
         >
           <TooltipProvider>
-            <main className="bg-[#FAFAFA] dark:bg-background  text-foreground flex flex-col justify-center items-center w-full pt-13">
+            <main className="bg-[#FAFAFA] dark:bg-[#1a1b23] text-foreground flex flex-col justify-center items-center w-full pt-13">
               <div className=" w-full ">{children}</div>
             </main>
           </TooltipProvider>

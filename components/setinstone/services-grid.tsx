@@ -81,7 +81,7 @@ export function ServicesGrid() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-            Comprehensive <span className="text-cyan-600 dark:text-cyan-400">Strategic Support</span>
+            Comprehensive <span className="text-green-600 dark:text-green-400">Strategic Support</span>
           </h2>
           <p className="text-xl text-slate-500 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
             Designed to help you build smarter and scale faster
@@ -108,7 +108,7 @@ export function ServicesGrid() {
                   
                   {/* Icon with animated glow */}
                   <div className="relative mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 dark:from-cyan-400 dark:to-cyan-500 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-cyan-500/25 dark:group-hover:shadow-cyan-400/25 transition-all duration-300 group-hover:scale-110">
+                    <div className="w-12 h-12 bg-green-400 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-cyan-500/25 dark:group-hover:shadow-cyan-400/25 transition-all duration-300 group-hover:scale-110">
                       <IconComponent className="w-6 h-6 text-white dark:text-slate-900" />
                     </div>
                     {/* Pulse effect */}

@@ -7,6 +7,7 @@ import { WhoWeWorkWith } from "@/components/setinstone/who-we-work-with"
 import { ServicesGrid } from "@/components/setinstone/services-grid"
 import { ContactSection } from "@/components/setinstone/contact-section"
 import { FloatingAvatar } from "@/components/setinstone/floating-avatar"
+import  { TestimonialsSection }  from "@/components/setinstone/testimonials-section"
 
 export default function HomePage() {
   return (
@@ -20,8 +21,7 @@ export default function HomePage() {
       {/* Main content */}
       <div className="relative z-10">
         <HeroSection />
-        <ProcessSteps />
-        <ExpertiseSection />
+        <TestimonialsSection />
         <WhoWeWorkWith />
         <ServicesGrid />
         <ContactSection />

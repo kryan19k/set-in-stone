@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useState, useEffect } from "react"
+import { HyperText } from "@/components/magicui/hyper-text"
 
 // Lightweight text rotator - no blur effects or complex animations
 function SimpleTextRotator({ texts, className }: { texts: string[], className?: string }) {
@@ -34,7 +35,7 @@ function SimpleTextRotator({ texts, className }: { texts: string[], className?: 
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 pt-24 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 pt-52 overflow-hidden">
       {/* Simple static pattern background */}
       <div className="absolute inset-0 opacity-20">
         <div 
@@ -57,8 +58,8 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-4"
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-cursive font-bold tracking-tight">
-              <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-green-500 bg-clip-text text-transparent drop-shadow-2xl">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-amsterdam font-bold tracking-tight">
+              <span className="bg-gradient-to-r from-cyan-400 via-slate-700 to-green-500 bg-clip-text text-transparent drop-shadow-2xl">
                 Set in Stone
               </span>
             </h1>
@@ -80,21 +81,21 @@ export function HeroSection() {
                 "Growing Together",
                 "Innovating Always"
               ]}
-              className="text-2xl md:text-4xl lg:text-5xl font-bold text-white h-12 md:h-16 flex items-center justify-center"
+              className="text-2xl md:text-4xl lg:text-5xl font-bold text-white h-12 md:h-16  pt-24 flex items-center justify-center"
             />
           </motion.div>
 
-          {/* Enhanced subtitle */}
-          <motion.h2
+          {/* Enhanced subtitle with HyperText */}
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl lg:text-2xl font-medium text-gray-300 max-w-4xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl lg:text-2xl font-medium max-w-4xl mx-auto leading-relaxed"
           >
-            Whether you're in <span className="text-cyan-400 font-semibold">Web3</span> or <span className="text-green-400 font-semibold">Web2</span>, 
-            launching a product, shaping strategy, or finding your next breakthrough—
-            <span className="text-white font-semibold"> I help you move forward with absolute clarity.</span>
-          </motion.h2>
+            <div className="text-lg md:text-xl lg:text-2xl font-medium text-gray-300 leading-relaxed">
+              Whether you're in Web3 or Web2, launching a product, shaping strategy, or finding your next breakthrough— I help you move forward with absolute clarity.
+            </div>
+          </motion.div>
 
           {/* Enhanced CTA section */}
           <motion.div
@@ -117,7 +118,7 @@ export function HeroSection() {
             <Button
               variant="outline"
               size="lg"
-              className="group relative overflow-hidden border-2 border-cyan-400/50 bg-transparent hover:bg-cyan-400/10 text-cyan-300 hover:text-white shadow-2xl hover:shadow-cyan-400/50 transition-all duration-500 transform hover:scale-105 px-8 md:px-12 py-6 md:py-8 text-lg md:text-xl font-semibold rounded-2xl backdrop-blur-xl"
+              className="group relative overflow-hidden border-2 border-green-400/50 bg-transparent hover:bg-green-400/10 text-green-300 hover:text-white shadow-2xl hover:shadow-cyan-400/50 transition-all duration-500 transform hover:scale-105 px-8 md:px-12 py-6 md:py-8 text-lg md:text-xl font-semibold rounded-2xl backdrop-blur-xl"
             >
               <span className="relative z-10 flex items-center gap-3">
                 Explore Our Network
@@ -139,7 +140,7 @@ export function HeroSection() {
               { number: "24/7", label: "Strategic Support" }
             ].map((stat, index) => (
               <div key={stat.label} className="text-center backdrop-blur-xl bg-white/5 rounded-xl p-4 md:p-6 border border-white/10">
-                <div className="text-2xl md:text-3xl font-bold text-cyan-400 mb-2">{stat.number}</div>
+                <div className="text-2xl md:text-3xl font-bold text-green-400 mb-2">{stat.number}</div>
                 <div className="text-gray-300 font-medium text-sm md:text-base">{stat.label}</div>
               </div>
             ))}

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
+import { AnimatedBackground } from "./animated-background"
 
 const clientCategories = [
   {
@@ -50,16 +51,7 @@ export function WhoWeWorkWith() {
   return (
     <section className="py-24 px-4 relative overflow-hidden bg-gradient-to-br from-gray-50/50 via-white to-gray-100/50 dark:from-slate-900/50 dark:via-slate-800/50 dark:to-slate-900/50">
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.05]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
-            linear-gradient(rgba(34,211,238,0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(34,211,238,0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '40px 40px'
-        }} />
-      </div>
-
+      <AnimatedBackground />
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section header */}
         <motion.div
@@ -70,7 +62,7 @@ export function WhoWeWorkWith() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-slate-100">
-            Who We <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-green-500 bg-clip-text text-transparent">Work With</span>
+            Who We <span className="bg-green-400 bg-clip-text text-transparent">Work With</span>
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
             From early-stage Web3 founders to established companies exploring blockchain, 
